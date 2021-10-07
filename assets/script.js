@@ -8,7 +8,7 @@ var tempResult = document.querySelector('.temparature');
 
 
 function getCurrentWeather (cityName) {
-    fetch ('api.openweathermap.org/data/2.5/weather?q='+ cityName +'&appid=ea10cd75a7ccafd4dac1dcb6eb7aca23')
+    fetch ('https://api.openweathermap.org/data/2.5/weather?q='+ cityName +'&appid=ea10cd75a7ccafd4dac1dcb6eb7aca23')
     .then(response => response.json())
     .then(data => {
 
@@ -16,9 +16,9 @@ function getCurrentWeather (cityName) {
        var weatherSearch = data['weather']['description'];
        var tempSearch = data['main']['temp'];
 
-       city.innerHTML = citySearch;
-       weather.innerHTML = weatherSearch;
-       temperature.innerHTML = tempSearch;
+       cityResult.innerHTML = citySearch;
+       weatherResult.innerHTML = weatherSearch;
+       tempResult.innerHTML = tempSearch;
     })
 }
 
