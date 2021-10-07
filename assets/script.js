@@ -4,7 +4,7 @@ var searchButton = document.querySelector('.btn');
 var inputBox = document.querySelector('.searchInput');
 var cityResult = document.querySelector('.city');
 var weatherResult = document.querySelector('.weather');
-var tempResult = document.querySelector('.temparature');
+var tempResult = document.querySelector('.temperature');
 
 
 function getCurrentWeather (cityName) {
